@@ -406,13 +406,33 @@
         <h3>Оставьте свои данные, мы вам перезвоним</h3>
         <form>
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>
+              <label for="name">Имя</label>
+              <input type="text" name="name" id="name" />
+            </li>
+            <li>
+              <label for="tel">Телефон</label>
+              <input type="tel" name="tel" id="tel" />
+            </li>
+            <li>
+              <label for="mail">Почта</label>
+              <input type="email" name="mail" id="mail" />
+            </li>
+            <li>
+              <label for="coment">Комментарий</label>
+              <input
+                type="text"
+                name="coment"
+                id="coment"
+                rows="7"
+                placeholder="Введите текст"
+              />
+            </li>
           </ul>
           <label for=""></label>
-          <button class="button-modal-close" data-modal-close>Отправить</button>
+          <button class="button-modal-close" type="submit" data-modal-close>
+            Отправить
+          </button>
         </form>
       </div>
     </div>
