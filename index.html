@@ -403,36 +403,52 @@
             <use href="./img/icons/sprite.svg#close-black-18dp"></use>
           </svg>
         </button>
-        <h3>Оставьте свои данные, мы вам перезвоним</h3>
-        <form>
-          <ul>
-            <li>
+        <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
+        <form class="form">
+          <ul class="list form-list">
+            <li class="form-item">
               <label for="name">Имя</label>
-              <input type="text" name="name" id="name" />
+              <input type="text" class="form-input" name="name" id="name" />
+              <svg class="modal-icon" width="12px" height="12px">
+                <use href="./img/icons/sprite.svg#person-black-18dp-1"></use>
+              </svg>
             </li>
-            <li>
+            <li class="form-item">
               <label for="tel">Телефон</label>
-              <input type="tel" name="tel" id="tel" />
+              <input type="tel" class="form-input" name="tel" id="tel" />
+              <svg class="modal-icon" width="13px" height="13px">
+                <use href="./img/icons/sprite.svg#phone-black-18dp-1"></use>
+              </svg>
             </li>
-            <li>
+            <li class="form-item">
               <label for="mail">Почта</label>
-              <input type="email" name="mail" id="mail" />
+              <input type="email" class="form-input" name="mail" id="mail" />
+              <svg class="modal-icon" width="15px" height="12px">
+                <use href="./img/icons/sprite.svg#email-black-18dp-1"></use>
+              </svg>
             </li>
-            <li>
+            <li class="form-item">
               <label for="coment">Комментарий</label>
-              <input
-                type="text"
+              <textarea
                 name="coment"
                 id="coment"
-                rows="7"
+                rows="8"
                 placeholder="Введите текст"
-              />
+              ></textarea>
             </li>
           </ul>
-          <label for=""></label>
-          <button class="button-modal-close" type="submit" data-modal-close>
-            Отправить
-          </button>
+
+          <label class="field">
+            <input class="checkbox" type="checkbox" name="consent" />
+            <span class="checkbox-icon"></span>
+            <span class="terms">Соглашаюсь с рассылкой и принимаю</span>
+            <a class="terms-link" href="">Условия договора</a>
+          </label>
+          <div class="modal-button">
+            <button class="button-modal-close" type="submit" data-modal-close>
+              Отправить
+            </button>
+          </div>
         </form>
       </div>
     </div>
